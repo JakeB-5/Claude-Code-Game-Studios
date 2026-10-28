@@ -1,3 +1,24 @@
+# Claude Code Game Studios — Codex-compatible fork
+
+This fork preserves [Donchitos's original studio](https://github.com/Donchitos/Claude-Code-Game-Studios)
+and adds **74 Codex skills and 49 native Codex role configurations**. Claude Code
+and Codex share the same workflow sources; Claude Code is not required for Codex.
+
+**Codex:** clone this fork, open its root in Codex, then use `$studio-start`.
+Use `$studio-help` for the next step or `$studio-settings` to inspect configuration.
+Requires Python 3.11+, Bash and Git. Native agent support depends on your Codex
+version; roles can also be applied sequentially in the main session.
+
+- [Codex setup and Korean quick start](docs/codex/README.md)
+- [Runtime translation and explicit validation](docs/codex/runtime.md)
+- [Verification results and limits](docs/codex/verification.md)
+
+The upstream README below describes the Claude interface. In Codex, `/NAME`
+studio workflows are invoked as `$studio-NAME`. Claude hook events are **not**
+automatically installed into Codex; use the explicit validators documented above.
+
+---
+
 <p align="center">
   <h1 align="center">Claude Code Game Studios</h1>
   <p align="center">

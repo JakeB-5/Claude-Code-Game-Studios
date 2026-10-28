@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-28",
+  "timezone": "Asia/Seoul",
+  "upstream_commit": "05ad7c8a5b8aa2aa86bbd3439ae7cf7295cac418",
+  "codex_cli": "0.163.0",
+  "platform": "macOS",
+  "python": "3.14.7",
+  "static": {
+    "skills": 74,
+    "agents": 49,
+    "skill_creator_validation_passed": 74,
+    "context_entrypoints_executed": 74,
+    "integration_tests_passed": 20
+  },
+  "live": [
+    {
+      "case": "settings",
+      "checks": {
+        "resolved_default": true,
+        "read_only": true,
+        "used_resolver": true,
+        "turn_completed": true
+      },
+      "passed": true,
+      "changed_files": [],
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "case": "quick-design",
+      "checks": {
+        "spec_written": true,
+        "tuning_values": true,
+        "data_unchanged": true,
+        "scope": true,
+        "turn_completed": true
+      },
+      "passed": true,
+      "changed_files": [
+        "design/quick-specs/movement-speed-test.md",
+        "production/session-state/active.md"
+      ],
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "case": "implementation",
+      "checks": {
+        "data_updated": true,
+        "data_test_run": true,
+        "no_fake_visual_pass": true,
+        "turn_completed": true,
+        "not_marked_complete": true,
+        "scope": true
+      },
+      "passed": true,
+      "changed_files": [
+        "assets/data/movement.json",
+        "production/epics/movement/story-speed.md",
+        "production/qa/evidence/story-speed-evidence.md",
+        "production/qa/evidence/story-speed/stamp.txt",
+        "production/session-state/active.md"
+      ],
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "case": "agent",
+      "checks": {
+        "delegation_observed": true,
+        "role_report": true,
+        "scope": true,
+        "found_mismatch": true,
+        "turn_completed": true
+      },
+      "passed": true,
+      "changed_files": [
+        "production/qa/role-review.json"
+      ],
+      "native_role_auto_loading": "not asserted; inspect reported host mode",
+      "exit_code": 0,
+      "timed_out": false,
+      "observed_mode": "role-reference fallback; host has no native role selector"
+    }
+  ],
+  "not_verified": [
+    "native custom-role automatic selection",
+    "Godot/Unity/Unreal engine execution and visual QA",
+    "all workflow behaviors",
+    "Windows"
+  ],
+  "initial_failures_resolved_or_scoped": [
+    "ephemeral parent unavailable to subagent; agent test now persists parent",
+    "native role selector not exposed by host; role-reference delegation tested instead"
+  ]
+}
