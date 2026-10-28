@@ -14,6 +14,7 @@ No model name is pinned by the port or its live test runner.
 | Agent TOML | All 49 parse with the three required fields; no model/permission overrides |
 | Shared context preprocessing | All 74 skill entrypoints execute without writing files |
 | Behavioral integration suite | 20 tests pass |
+| GitHub Actions, Python 3.11 | Both macOS and Linux pass the adapter check and 20 tests |
 | Original `.claude/`, `CLAUDE.md`, `project.yaml`, license | Unmodified from upstream |
 
 The integration suite checks real settings resolution and local overrides,
